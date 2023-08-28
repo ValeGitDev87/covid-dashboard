@@ -1,0 +1,130 @@
+*{
+    font-family: 'Electrolize', sans-serif;
+    color :rgb(255, 255, 255);
+}
+
+:root{
+    --main-color: #19ffb2;
+}
+.text-main{
+    color: var(--main-color);
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+body{
+    background-color: #535353;
+}
+
+.card-custom{
+  box-shadow: -5px -5px 20px rgb(87, 87, 87), 5px 5px 30px #292929;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.card-custom:hover{
+ box-shadow: -2px -2px 5px white, 2px 2px 5px  #292929;
+}
+.card-custom:active{
+    box-shadow: inset 1px 1px 2px rgb(88, 88, 88), -1px -1px 2px white;
+}
+.style-scroll{
+    height: 400px;
+    overflow-y: scroll;
+}
+   
+/* classi modali */
+.modal-custom{
+    
+    position: fixed;
+    left: 0px;
+    top: 0px;   
+    z-index: -1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    background-color: rgba(0, 0, 0, 0.76);
+    transition: 0.5;
+    overflow-y: scroll;
+   
+}
+.modal-custom-content{
+    background-color: rgb(184, 184, 184);
+    margin: auto;
+    padding:30px;
+    width: 70%;
+    border-radius: 10px;
+    color: var(--main-color);
+    
+    
+}
+.modal-custom.active{
+  z-index: 10;
+  opacity: 1;
+  
+  
+}
+
+/* classi barre */
+
+.pin-new{
+    border-right: 2px solid rgb(0, 0, 255,0.2);
+    position: relative;
+    width: 5px;
+    margin-right: 1px;
+    
+}
+.pin-new::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -3px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color:  blue;
+}
+.pin-death{
+    border-right: 2px solid rgb(255, 0, 0,0.2);
+    position: absolute;
+    width: 5px;
+    margin-right: 1px;
+}
+.pin-death::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -3px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color:  red;
+
+}
+.pin-recovered{
+    border-right: 2px solid rgba(0, 255, 42, 0.2);
+    position: relative;
+    width: 5px;
+    margin-right: 1px;
+
+}
+.pin-recovered::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -3px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color:  green;
+    
+}
+.ploot{
+    height: 200px;
+    width: 100px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+    
